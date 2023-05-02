@@ -35,37 +35,38 @@
     ></script>
     <!-- bootstrap -->
     <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+
+    <script defer src="assests/js/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header wrapper">
       <a>
         <img class="logo" src="assests/images/logo@2x.png" alt="logo" />
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
           <li><a class="main-nav-link" href="#">Free Consultation</a></li>
-          <li><a class="main-nav-link" href="#">Contact</a></li>
+          <li><a class="main-nav-link" href="contact.html">Contact</a></li>
           <li><a class="main-nav-link" href="#">Services</a></li>
         </ul>
       </nav>
-      <button class="btn-mobile-nav">
+      <button class="button-mobile-nav">
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
-    <main>
-      <section class="section-hero">
+    <main class="wrapper flex-column">
+      <section class="section section-hero flex-column">
         <h1 class="hero-header">
           Organizing & Decluttering Services for Portland, Oregon.
         </h1>
-        <a class="btn btn-schedule">schedule a free consultation</a>
+        <a class="button button-schedule">schedule a free consultation</a>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -119,31 +120,32 @@
           </button>
         </div>
         <div>
-          <a class="btn btn-buy">Buy Now</a>
+          <a class="button button-buy">Buy Now</a>
         </div>
       </section>
-      <section class="section-about">
-        <p>
-          We want you to love your place, your stuff, and your time. Let us help
-          you simplify your world, and teach you how to keep it going. We
-          deliver simple systems and judgment-free support to get you on the
-          road to better organization. Whether you choose to work one-on-one, or
-          require a team, we can provide:
-        </p>
-        <ul>
-          <li>Whole house or single room organization.</li>
-          <li>Commercial, office, and home office space organization.</li>
-          <li>
-            Systems to support executive functioning challenges (ADHD, Autism,
-            Dyslexia, etc.) or the chronically busy and overwhelmed.
-          </li>
-          <li>Move management and home staging services.</li>
-        </ul>
-        <div class="btn-container">
-          <a class="btn btn-schedule">schedule a free consultation</a>
+      <section class="section section-about flex-column">
+        <div>
+          <p>
+            We want you to love your place, your stuff, and your time. Let us
+            help you simplify your world, and teach you how to keep it going. We
+            deliver simple systems and judgment-free support to get you on the
+            road to better organization. Whether you choose to work one-on-one,
+            or require a team, we can provide:
+          </p>
+          <ul>
+            <li>Whole house or single room organization.</li>
+            <li>Commercial, office, and home office space organization.</li>
+            <li>
+              Systems to support executive functioning challenges (ADHD, Autism,
+              Dyslexia, etc.) or the chronically busy and overwhelmed.
+            </li>
+            <li>Move management and home staging services.</li>
+          </ul>
         </div>
+
+        <a class="button button-schedule">schedule a free consultation</a>
       </section>
-      <section class="section-testimonial">
+      <section class="section section-testimonial flex-column">
         <ul class="testimonial-list">
           <li class="testimonial-list-item">
             <div class="testimonial">
@@ -224,21 +226,21 @@
             </div>
           </li>
         </ul>
-        <div class="btn-container">
-          <a class="btn btn-schedule">schedule a free consultation</a>
-        </div>
+        <a class="button button-schedule">schedule a free consultation</a>
       </section>
-      <section class="section-cta">
-        <p class="cta-heading">How much does it cost to get started?</p>
-        <p>
-          A three-hour hands-on in-person session, including a 30-minute online
-          consultation, is just $225.
-        </p>
+      <section class="section section-cta flex-column">
         <div>
-          <a class="btn btn-buy">Buy Now</a>
+          <p class="cta-heading">How much does it cost to get started?</p>
+          <p>
+            A three-hour hands-on in-person session, including a 30-minute
+            online consultation, is just $225.
+          </p>
+        </div>
+        <div>
+          <a class="button button-buy">Buy Now</a>
         </div>
       </section>
-      <section class="section-cert">
+      <section class="section section-cert">
         <div class="sue-desc">
           <p class="sue-text">
             Hi! I'm Sue. I began my career as a software developer and took that
@@ -249,7 +251,7 @@
             people with organizing and simplifying their lives, so I started
             Sorted Digs.
           </p>
-          <img src="assests/images/sue.webp" alt="sue" />
+          <img class="sue-image" src="assests/images/sue.webp" alt="sue" />
         </div>
         <div class="certificates">
           <a href="https://www.napo.net/" target="_blank">
@@ -321,7 +323,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer wrapper">
       <nav class="footer-nav">
         <ul class="footer-nav-list">
           <li><a class="main-nav-link" href="#">Free Consultation</a></li>
