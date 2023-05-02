@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: rgba(42, 106, 106, 1);
+  padding: 0.8em 1.8em;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: #f7ff93;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgba(65, 82, 57, 1);
+  color: #f7ff93;
+}
