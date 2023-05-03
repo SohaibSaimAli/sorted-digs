@@ -23,21 +23,7 @@
 .form {
   text-align: left;
 }
-.button-submit {
-  background-color: #069a8e;
-  color: #eee;
-  border-radius: 100px;
-  border: none;
-  cursor: pointer;
-  border: 2px solid #069a8e;
-}
 
-.button-submit:hover,
-.button-submit:active {
-  color: #069a8e;
-  background-color: #eee;
-  border: 2px solid #069a8e;
-}
 /* footer */
 .footer-heading-container {
   gap: 1rem;
