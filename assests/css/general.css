@@ -2,13 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: paralucent, sans-serif;
   font-weight: 400;
 }
 
 html {
   overflow-x: hidden;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -25,12 +27,13 @@ html {
 .button {
   background-color: rgba(42, 106, 106, 1);
   padding: 0.8em 1.8em;
-  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
   border-radius: 0.5rem;
   font-weight: 500;
   color: #f7ff93;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -42,4 +45,26 @@ html {
 .button-schedule {
   text-align: center;
   font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+.icon-wrapper {
+  display: flex;
+  background-color: #333;
+  border-radius: 12px;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon {
+  fill: #aaa;
+  width: 28px;
+  height: 28px;
+}
+
+.icon-wrapper:hover {
+  background-color: #aaa;
+}
+
+.icon-wrapper:hover .social-icon {
+  fill: #333;
 }

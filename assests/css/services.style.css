@@ -1,0 +1,47 @@
+.primary-heading {
+  font-size: clamp(1rem, 8vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #494a52;
+}
+
+.secondary-heading {
+  font-size: clamp(1rem, 6vw, 2rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #494a52;
+  text-align: center;
+}
+
+.text-color-brand {
+  color: rgba(42, 106, 106, 1);
+}
+
+.text-color-brand svg {
+  fill: rgba(42, 106, 106, 1);
+}
+
+.service-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+.hero-content {
+  padding-inline: 2rem;
+  /* font-size: 20px; */
+}
+
+.icon-wrapper {
+  background-color: rgba(42, 106, 106, 1);
+}
+
+.social-icon {
+  fill: #eee;
+}
+
+.footer {
+  text-align: center;
+  gap: 2rem;
+  padding-block: 2rem;
+}

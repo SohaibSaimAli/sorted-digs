@@ -2,6 +2,7 @@
   font-size: clamp(1rem, 8vw, 2.5rem);
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #494a52;
 }
 .text {
   font-size: clamp(1rem, 3vw, 2rem);
@@ -15,10 +16,9 @@
 /* form */
 .form-container {
   width: 100%;
-  padding: 1rem;
-  box-shadow: 4px 6px 6px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 4px 6px 6px 2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 4px 6px 6px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px 24px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 6px 6px 24px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 6px 6px 24px -5px rgba(0, 0, 0, 0.3);
 }
 .form {
   text-align: left;
