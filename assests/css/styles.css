@@ -97,7 +97,7 @@ main {
 
 .testimonial-text {
   font-weight: 600;
-  font-size: clamp(0.8em, 3vw, 1.2rem);
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
 }
 
 .testimonial-detail {
@@ -125,6 +125,16 @@ main {
   font-size: 2rem;
 }
 
+.quotes-entity {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+
+  color: rgba(42, 106, 106, 1);
+  /* line-height: normal; */
+}
+.testimonial-client {
+  color: rgba(42, 106, 106, 1);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
 /* SECTION CERT */
 
 .sue-desc {
