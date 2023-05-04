@@ -137,16 +137,14 @@ main {
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 250ms ease-in;
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .button:hover,
 .button:active {
   background-color: rgb(42, 136, 136);
-}
-
-.button-schedule {
-  text-align: center;
-  font-size: clamp(0.8rem, 2vw, 1.1rem);
 }
 
 .button-pill {
@@ -156,7 +154,7 @@ main {
   border: none;
   cursor: pointer;
   border: 2px solid #069a8e;
-  font-weight: 600;
+  font-weight: 500;
   max-width: max-content;
 }
 

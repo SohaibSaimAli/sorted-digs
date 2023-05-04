@@ -14,6 +14,14 @@
   padding-block: 1rem;
 }
 
+.tertiary-heading {
+  font-size: clamp(1rem, 6vw, 1.5rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #494a52;
+  padding-block: 1rem;
+}
+
 .text-color-brand {
   color: rgba(42, 106, 106, 1);
 }
@@ -65,7 +73,7 @@
   font-size: 0.8rem;
 }
 
-.carousel-container {
+.carousel-service-container {
   align-self: center;
 }
 
@@ -74,6 +82,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 .section-cta > button {
   align-self: center;
@@ -98,4 +107,63 @@
 .list-icon {
   width: 2rem;
   height: 2rem;
+}
+
+/* section digital decluttring*/
+.section-digital .secondary-heading {
+  text-align: center;
+}
+.section-digital .description {
+  max-width: 80%;
+  margin-inline: auto;
+  padding-block: 1rem;
+}
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* section helping */
+
+.section-helping {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.section-helping .card-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+}
+
+.helping-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.helping-container > img,
+.helping-container > a,
+.helping-container > h2 {
+  justify-self: center;
+}
+
+.helping-container > a {
+  align-self: end;
+}
+/* section schedule */
+.section-schedule {
+  width: 100%;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.section-schedule button {
+  border: none;
+}
+
+.section-schedule a {
+  text-decoration: none;
+  color: #eee;
 }
