@@ -65,14 +65,14 @@
       </button>
     </header>
     <main class="wrapper flex-col">
-      <section class="section-hero">
+      <section class="section-hero section-hero-flex">
         <div class="hero-content">
           <h1 class="hero-header">
             Organizing & Decluttering Services for Portland, Oregon.
           </h1>
           <a class="button">schedule a free consultation</a>
         </div>
-        <div style="width: 80%">
+        <div class="carousel-container">
           <div id="carouselHero" class="carousel slide">
             <div class="carousel-indicators">
               <button
@@ -371,12 +371,36 @@
     </main>
     <footer class="footer wrapper">
       <h4>Follow us on</h4>
-      <div class="icon-container">
-        <a class="social-link" href="https://www.instagram.com" target="_blank">
-          <div class="icon-wrapper">
-            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-          </div>
-        </a>
+      <div class="social-icon-container">
+        <div class="icon-container">
+          <a
+            class="social-link"
+            href="https://www.facebook.com"
+            target="_blank"
+          >
+            <div class="icon-wrapper">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </div>
+          </a>
+        </div>
+        <div class="icon-container">
+          <a
+            class="social-link"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <div class="icon-wrapper">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </div>
+          </a>
+        </div>
+        <div class="icon-container">
+          <a class="social-link" href="https://www.twitter.com" target="_blank">
+            <div class="icon-wrapper">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </div>
+          </a>
+        </div>
       </div>
       <hr class="divider" />
       <div class="footer-content">
@@ -397,7 +421,11 @@
                 class="footer-icon"
                 name="caret-forward-outline"
               ></ion-icon
-              ><a class="footer-nav-link" href="#">Free Consultation</a>
+              ><a
+                class="footer-nav-link"
+                href="https://meetings.hubspot.com/sue-haas"
+                >Free Consultation</a
+              >
             </li>
             <li>
               <ion-icon

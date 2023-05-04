@@ -1,12 +1,12 @@
 .heading {
   font-size: clamp(1rem, 8vw, 2.5rem);
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: #494a52;
 }
 .text {
   font-size: clamp(1rem, 3vw, 2rem);
-  color: rgba(42, 106, 106, 1);
+  color: rgb(42, 106, 106);
   line-height: 1.6;
 }
 
@@ -19,31 +19,9 @@
   box-shadow: 6px 6px 24px -5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 6px 6px 24px -5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 6px 6px 24px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 .form {
   text-align: left;
-}
-
-/* footer */
-.footer-heading-container {
-  gap: 1rem;
-}
-.footer-heading {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #454545;
-}
-
-.icon-wrapper {
-  background-color: rgba(42, 106, 106, 1);
-}
-
-.social-icon {
-  fill: #eee;
-}
-
-.footer {
-  text-align: center;
-  gap: 2rem;
-  padding-block: 2rem;
 }

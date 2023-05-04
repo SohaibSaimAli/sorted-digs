@@ -1,6 +1,6 @@
 .primary-heading {
   font-size: clamp(1rem, 8vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: #494a52;
   align-self: center;
@@ -8,7 +8,7 @@
 
 .secondary-heading {
   font-size: clamp(1rem, 6vw, 2rem);
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 1rem;
   color: #494a52;
   padding-block: 1rem;
@@ -26,7 +26,11 @@
   align-items: start;
 }
 /* section hero */
-
+.section-hero-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
 .hero-description {
   padding-block: 1rem;
 }
@@ -62,7 +66,7 @@
 }
 
 .carousel-container {
-  max-width: 70%;
+  align-self: center;
 }
 
 /* CTA section */
@@ -94,23 +98,4 @@
 .list-icon {
   width: 2rem;
   height: 2rem;
-}
-
-/* footer */
-.icon-wrapper {
-  background-color: rgba(42, 106, 106, 1);
-}
-
-.social-icon {
-  fill: #eee;
-}
-
-.footer {
-  text-align: center;
-  gap: 2rem;
-  padding-block: 2rem;
-}
-
-.footer.flex-col {
-  align-items: center;
 }

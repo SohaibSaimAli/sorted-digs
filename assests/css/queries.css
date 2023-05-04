@@ -61,6 +61,17 @@
     align-items: center;
     gap: 2rem;
   }
+
+  .section-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .carousel-container {
+    max-width: 70%;
+    justify-self: center;
+  }
+
   .hero-content {
     align-items: center;
   }
