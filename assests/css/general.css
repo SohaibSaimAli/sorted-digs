@@ -20,7 +20,6 @@ main {
   grid-template-columns: 1fr 5fr;
   justify-content: center;
   align-items: center;
-  /* gap: 5rem; */
   height: 6rem;
 }
 
@@ -148,7 +147,7 @@ main {
 }
 
 .button-pill {
-  background-color: #069a8e;
+  background-color: rgb(6, 154, 142);
   color: #eee;
   border-radius: 100px;
   border: none;
@@ -224,12 +223,10 @@ main {
   width: 100%;
   display: flex;
   align-items: start;
-  /* justify-content: space-between; */
   gap: 3rem;
 }
 .footer-nav-list {
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
   list-style: none;
   flex-direction: column;
@@ -238,7 +235,6 @@ main {
 
 .footer-logo-container {
   text-align: center;
-  /* width: 70%; */
 }
 
 .copyright {

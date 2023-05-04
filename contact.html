@@ -36,6 +36,7 @@
     <script defer src="assests/js/script.js"></script>
     <title>Contact</title>
   </head>
+
   <body>
     <header class="header wrapper">
       <a>
@@ -71,34 +72,56 @@
         </div>
       </section>
       <section class="container-sm px-5 py-5 text-left form-container">
-        <form class="row g-3 needs-validation">
-          <div class="col-12">
-            <label for="inputEmail" class="form-label"
-              >Email <span style="color: red">&ast;</span></label
-            >
-            <input type="email" class="form-control" id="inputEmail" required />
+        <div>
+          <div class="needs-to-hide">
+            <img
+              style="width: 100%"
+              src="assests/images/email-illustration.png"
+              alt=""
+            />
           </div>
-          <div class="col-12">
-            <label for="inputFirstname" class="form-label">First name</label>
-            <input type="text" class="form-control" id="inputFirstname" />
-          </div>
-          <div class="col-12">
-            <label for="inputLastname" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="inputLastname" />
-          </div>
-          <div class="col-12">
-            <label for="inputMessage" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="inputMessage"
-              rows="3"
-            ></textarea>
-          </div>
+          <form class="row g-3 needs-validation">
+            <div class="col-12 rounded">
+              <label for="inputEmail" class="form-label"
+                >Email <span style="color: red">&ast;</span></label
+              >
+              <input
+                type="email"
+                class="form-control rounded-pill"
+                id="inputEmail"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputFirstname" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control rounded-pill"
+                id="inputFirstname"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputLastname" class="form-label">Last name</label>
+              <input
+                type="text"
+                class="form-control rounded-pill"
+                id="inputLastname"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputMessage" class="form-label">Message</label>
+              <textarea
+                class="form-control rounded-4"
+                id="inputMessage"
+                rows="3"
+              ></textarea>
+            </div>
 
-          <div class="col-12">
-            <button class="button button-pill">Submit</button>
-          </div>
-        </form>
+            <div class="col-12 text-center">
+              <button class="button button-pill">Submit</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer wrapper">

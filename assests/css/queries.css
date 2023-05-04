@@ -82,9 +82,7 @@
   .hero-description {
     max-width: 32rem;
   }
-  /* .sue-image {
-    width: 60%;
-  } */
+
   .sue-desc {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -109,6 +107,10 @@
   }
   .section-helping .card-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .needs-to-hide {
+    display: none;
   }
 }
 
