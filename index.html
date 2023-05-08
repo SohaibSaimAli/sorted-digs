@@ -42,79 +42,278 @@
   </head>
 
   <body>
-    <header class="header wrapper">
-      <a>
-        <img class="logo" src="assests/images/logo@2x.png" alt="logo" />
-      </a>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <a>
+            <img class="logo" src="assests/images/logo@2x.png" alt="logo" />
+          </a>
 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a
-              class="main-nav-link"
-              href="https://meetings.hubspot.com/sue-haas"
-              >Free Consultation</a
-            >
-          </li>
-          <li><a class="main-nav-link" href="contact.html">Contact</a></li>
-          <li><a class="main-nav-link" href="services.html">Services</a></li>
-        </ul>
-      </nav>
-      <button class="button-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li class="nav-link-hidden">
+                <a class="main-nav-link" href="index.html">Home</a>
+              </li>
+              <li>
+                <a
+                  class="main-nav-link"
+                  href="https://meetings.hubspot.com/sue-haas"
+                  >Free Consultation</a
+                >
+              </li>
+              <li><a class="main-nav-link" href="contact.html">Contact</a></li>
+              <li>
+                <a class="main-nav-link" href="services.html">Services</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
     </header>
-    <main class="wrapper flex-col">
-      <section class="section-hero section-hero-flex">
-        <div class="hero-content">
-          <h1 class="hero-header">
-            Organizing & Decluttering Services for Portland, Oregon.
-          </h1>
-          <a href="https://meetings.hubspot.com/sue-haas" class="button"
+    <main class="flex-col">
+      <section class="section-hero">
+        <div class="section-hero-flex wrapper">
+          <div class="hero-content">
+            <h1 class="hero-header">
+              Organizing & Decluttering Services for Portland, Oregon.
+            </h1>
+            <a href="https://meetings.hubspot.com/sue-haas" class="button"
+              >schedule a free consultation</a
+            >
+          </div>
+          <div class="carousel-container">
+            <div id="carouselHero" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselHero"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselHero"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    style="border-radius: 10px"
+                    src="assests/images/kbkitchenaftercrop1500px385k.webp"
+                    class="d-block w-100"
+                    alt="kitchen after organized"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    style="border-radius: 10px"
+                    src="assests/images/kbkitchenbeforecrop1500px362k-1.webp"
+                    class="d-block w-100"
+                    alt="kitchen before organized"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselHero"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselHero"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-about">
+        <div class="flex-col wrapper">
+          <div>
+            <a
+              href="https://app.hubspot.com/payments/purchase/hscs_GeaR5jIu6UsarWJOs6CSE1D8F2POuPFXlQHxkrtbKK0Ejbm2KnvxALY3XXo2nixT?referrer=PAYMENT_LINK"
+              class="button button-buy"
+              >Buy Now</a
+            >
+          </div>
+          <div>
+            <p class="about-content">
+              We want you to love your place, your stuff, and your time. Let us
+              help you simplify your world, and teach you how to keep it going.
+              We deliver simple systems and judgment-free support to get you on
+              the road to better organization. Whether you choose to work
+              one-on-one, or require a team, we can provide:
+            </p>
+            <ul class="about-list">
+              <li class="list-item">
+                <div>
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                </div>
+                <p>Whole house or single room organization.</p>
+              </li>
+              <li class="list-item">
+                <div>
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                </div>
+                <p>Commercial, office, and home office space organization.</p>
+              </li>
+              <li class="list-item">
+                <div>
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                </div>
+                <p>
+                  Systems to support executive functioning challenges (ADHD,
+                  Autism, Dyslexia, etc.) or the chronically busy and
+                  overwhelmed.
+                </p>
+              </li>
+              <li class="list-item">
+                <div>
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                </div>
+                <p>Move management and home staging services.</p>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://meetings.hubspot.com/sue-haas"
+            class="button button-schedule"
             >schedule a free consultation</a
           >
         </div>
-        <div class="carousel-container">
-          <div id="carouselHero" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselHero"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselHero"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-            </div>
+      </section>
+      <section class="section section-testimonial">
+        <div class="flex-col wrapper">
+          <div
+            id="carouselTestimonial"
+            class="carousel slide testimonial-caraousel"
+            style="text-align: center; padding-inline: auto"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  style="border-radius: 10px"
-                  src="assests/images/kbkitchenaftercrop1500px385k.webp"
-                  class="d-block w-100"
-                  alt="kitchen after organized"
-                />
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    <span class="quotes-entity">&ldquo; </span>I'm easily
+                    overwhelmed in the kitchen because of my ADHD. Sue tailored
+                    the organization of my kitchen to better suit the way I
+                    think and move in that space. I feel so much more confident
+                    in the kitchen now. We also worked on my bathroom.
+                    Everything I need daily is now within reach and
+                    easy-to-find.<span class="quotes-entity"> &rdquo;</span>
+                  </p>
+                  <img
+                    class="testimonial-img"
+                    src="assests/images/profile 1.webp"
+                    alt="Coley"
+                  />
+                  <div class="testimonial-detail">
+                    <p class="testimonial-client">Coley</p>
+                    <p>Kitchen and Bathroom Client</p>
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img
-                  style="border-radius: 10px"
-                  src="assests/images/kbkitchenbeforecrop1500px362k-1.webp"
-                  class="d-block w-100"
-                  alt="kitchen before organized"
-                />
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    <span class="quotes-entity">&ldquo; </span>It's really hard
+                    to take the time to do these types of organizational
+                    projects, but Sue was flexible with my schedule and very
+                    helpful with suggesting new ideas. She hustles and comes to
+                    my house prepared, organized and ready to work. Efficient
+                    and fun to work with. Would recommend her to friends and
+                    family!<span class="quotes-entity"> &rdquo;</span>
+                  </p>
+                  <img
+                    class="testimonial-img"
+                    src="assests/images/profile 2.webp"
+                    alt="Lynn"
+                  />
+                  <div class="testimonial-detail">
+                    <p class="testimonial-client">Lynn</p>
+                    <p>Laundry and Pantry Client</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    <span class="quotes-entity">&ldquo; </span>We were
+                    overwhelmed by a new bigger kitchen and decades of
+                    accumulated dishes and pots. Sue came in and not only fixed
+                    our kitchen issues but inspired us to organize other spaces
+                    in our home as well.<span class="quotes-entity">
+                      &rdquo;</span
+                    >
+                  </p>
+                  <img
+                    class="testimonial-img"
+                    src="assests/images/profile 3.webp"
+                    alt="Dan & Brooke"
+                  />
+                  <div class="testimonial-detail">
+                    <p class="testimonial-client">Dan & Brooke</p>
+                    <p>Kitchen Clients</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    <span class="quotes-entity">&ldquo; </span>Sue really
+                    understands how neurodivergence impacts one's executive
+                    functioning and organizational skills — and can get you
+                    "sorted! <span class="quotes-entity"> &rdquo;</span>
+                  </p>
+                  <img
+                    class="testimonial-img"
+                    src="assests/images/profile 4.webp"
+                    alt="Mara McLoughlin"
+                  />
+                  <div class="testimonial-detail">
+                    <p class="testimonial-client">Mara McLoughlin</p>
+                    <p>Founder and Lead Facilitator, IRL Social Skills</p>
+                  </div>
+                </div>
               </div>
             </div>
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselHero"
+              data-bs-target="#carouselTestimonial"
               data-bs-slide="prev"
             >
               <span
@@ -126,7 +325,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselHero"
+              data-bs-target="#carouselTestimonial"
               data-bs-slide="next"
             >
               <span
@@ -136,256 +335,111 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </div>
-      </section>
-      <section class="section section-about flex-col">
-        <div>
+
           <a
-            href="https://app.hubspot.com/payments/purchase/hscs_GeaR5jIu6UsarWJOs6CSE1D8F2POuPFXlQHxkrtbKK0Ejbm2KnvxALY3XXo2nixT?referrer=PAYMENT_LINK"
-            class="button button-buy"
-            >Buy Now</a
+            href="https://meetings.hubspot.com/sue-haas"
+            class="button button-schedule"
+            >schedule a free consultation</a
           >
         </div>
-        <div>
-          <p>
-            We want you to love your place, your stuff, and your time. Let us
-            help you simplify your world, and teach you how to keep it going. We
-            deliver simple systems and judgment-free support to get you on the
-            road to better organization. Whether you choose to work one-on-one,
-            or require a team, we can provide:
-          </p>
-          <ul>
-            <li>Whole house or single room organization.</li>
-            <li>Commercial, office, and home office space organization.</li>
-            <li>
-              Systems to support executive functioning challenges (ADHD, Autism,
-              Dyslexia, etc.) or the chronically busy and overwhelmed.
-            </li>
-            <li>Move management and home staging services.</li>
-          </ul>
-        </div>
-
-        <a
-          href="https://meetings.hubspot.com/sue-haas"
-          class="button button-schedule"
-          >schedule a free consultation</a
-        >
       </section>
-      <section class="section section-testimonial flex-col">
-        <div
-          id="carouselTestimonial"
-          class="carousel slide"
-          style="text-align: center; padding-inline: auto"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="testimonial">
-                <p class="testimonial-text">
-                  <span class="quotes-entity">&ldquo; </span>I'm easily
-                  overwhelmed in the kitchen because of my ADHD. Sue tailored
-                  the organization of my kitchen to better suit the way I think
-                  and move in that space. I feel so much more confident in the
-                  kitchen now. We also worked on my bathroom. Everything I need
-                  daily is now within reach and easy-to-find.<span
-                    class="quotes-entity"
-                  >
-                    &rdquo;</span
-                  >
-                </p>
-                <img
-                  class="testimonial-img"
-                  src="assests/images/profile 1.webp"
-                  alt="Coley"
-                />
-                <div class="testimonial-detail">
-                  <p class="testimonial-client">Coley</p>
-                  <p>Kitchen and Bathroom Client</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial">
-                <p class="testimonial-text">
-                  <span class="quotes-entity">&ldquo; </span>It's really hard to
-                  take the time to do these types of organizational projects,
-                  but Sue was flexible with my schedule and very helpful with
-                  suggesting new ideas. She hustles and comes to my house
-                  prepared, organized and ready to work. Efficient and fun to
-                  work with. Would recommend her to friends and family!<span
-                    class="quotes-entity"
-                  >
-                    &rdquo;</span
-                  >
-                </p>
-                <img
-                  class="testimonial-img"
-                  src="assests/images/profile 2.webp"
-                  alt="Lynn"
-                />
-                <div class="testimonial-detail">
-                  <p class="testimonial-client">Lynn</p>
-                  <p>Laundry and Pantry Client</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial">
-                <p class="testimonial-text">
-                  <span class="quotes-entity">&ldquo; </span>We were overwhelmed
-                  by a new bigger kitchen and decades of accumulated dishes and
-                  pots. Sue came in and not only fixed our kitchen issues but
-                  inspired us to organize other spaces in our home as well.<span
-                    class="quotes-entity"
-                  >
-                    &rdquo;</span
-                  >
-                </p>
-                <img
-                  class="testimonial-img"
-                  src="assests/images/profile 3.webp"
-                  alt="Dan & Brooke"
-                />
-                <div class="testimonial-detail">
-                  <p class="testimonial-client">Dan & Brooke</p>
-                  <p>Kitchen Clients</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonial">
-                <p class="testimonial-text">
-                  <span class="quotes-entity">&ldquo; </span>Sue really
-                  understands how neurodivergence impacts one's executive
-                  functioning and organizational skills — and can get you
-                  "sorted! <span class="quotes-entity"> &rdquo;</span>
-                </p>
-                <img
-                  class="testimonial-img"
-                  src="assests/images/profile 4.webp"
-                  alt="Mara McLoughlin"
-                />
-                <div class="testimonial-detail">
-                  <p class="testimonial-client">Mara McLoughlin</p>
-                  <p>Founder and Lead Facilitator, IRL Social Skills</p>
-                </div>
-              </div>
-            </div>
+      <section class="section section-cta">
+        <div class="wrapper flex-col">
+          <div>
+            <p class="cta-heading">How much does it cost to get started?</p>
+            <p>
+              A three-hour hands-on in-person session, including a 30-minute
+              online consultation, is just $225.
+            </p>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselTestimonial"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselTestimonial"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-        <a
-          href="https://meetings.hubspot.com/sue-haas"
-          class="button button-schedule"
-          >schedule a free consultation</a
-        >
-      </section>
-      <section class="section section-cta flex-col">
-        <div>
-          <p class="cta-heading">How much does it cost to get started?</p>
-          <p>
-            A three-hour hands-on in-person session, including a 30-minute
-            online consultation, is just $225.
-          </p>
-        </div>
-        <div>
-          <a
-            href="https://app.hubspot.com/payments/purchase/hscs_GeaR5jIu6UsarWJOs6CSE1D8F2POuPFXlQHxkrtbKK0Ejbm2KnvxALY3XXo2nixT?referrer=PAYMENT_LINK"
-            class="button button-buy"
-            >Buy Now</a
-          >
+          <div>
+            <a
+              href="https://app.hubspot.com/payments/purchase/hscs_GeaR5jIu6UsarWJOs6CSE1D8F2POuPFXlQHxkrtbKK0Ejbm2KnvxALY3XXo2nixT?referrer=PAYMENT_LINK"
+              class="button button-buy"
+              >Buy Now</a
+            >
+          </div>
         </div>
       </section>
       <section class="section section-cert">
-        <div class="sue-desc">
-          <p class="sue-text">
-            Hi! I'm Sue. I began my career as a software developer and took that
-            problem-solving mindset into learning how to best support my
-            family's organizing challenges. Over the years I found myself
-            frequently being tapped by friends for information and advice on how
-            to support their own families. I decided I wanted to help more
-            people with organizing and simplifying their lives, so I started
-            Sorted Digs.
-          </p>
-          <img
-            style="border-radius: 10px"
-            class="sue-image"
-            src="assests/images/sue.webp"
-            alt="sue"
-          />
-        </div>
-        <div class="certificates">
-          <a href="https://www.napo.net/" target="_blank">
+        <div class="wrapper">
+          <div class="sue-desc">
+            <p class="sue-text">
+              Hi! I'm Sue. I began my career as a software developer and took
+              that problem-solving mindset into learning how to best support my
+              family's organizing challenges. Over the years I found myself
+              frequently being tapped by friends for information and advice on
+              how to support their own families. I decided I wanted to help more
+              people with organizing and simplifying their lives, so I started
+              Sorted Digs.
+            </p>
             <img
-              class="cert-logo"
-              src="assests/images/NAPO-member-02translucentstacked.webp"
-              alt=""
+              style="border-radius: 10px"
+              class="sue-image"
+              src="assests/images/sue.webp"
+              alt="sue"
             />
-          </a>
-          <a href="https://napooregon.com/" target="_blank">
-            <img
-              class="cert-logo"
-              src="assests/images/NAPO-oregon-chapter-02.webp"
-              alt=""
-            />
-          </a>
-          <a
-            href="https://badging.napo.net/sue-haas/move-management-home-staging-specialist-certificate/7b01c548-22cb-42bd-8089-593ae3d87b1f"
-            target="_blank"
-          >
-            <img
-              class="cert-logo"
-              src="assests/images/NAPO-22-Badges-SpecialistCertificate-High-Moving-Staging.webp"
-              alt=""
-            />
-          </a>
-          <a
-            href="https://badging.napo.net/sue-haas/2023-napo-business-stamp-approval/fea8ef55-34fe-4865-a557-fdc57f5acdd2"
-            target="_blank"
-          >
-            <img
-              class="cert-logo"
-              src="assests/images/NAPO-23-Approved-Business-Badge.webp"
-              alt=""
-            />
-          </a>
-          <a
-            href="https://www.instituteprofessionalorganizers.com/"
-            target="_blank"
-          >
-            <img
-              class="cert-logo"
-              src="assests/images/CMPO_tm_FINAL_Logo_Transparent 500x500.webp"
-              alt=""
-            />
-          </a>
+          </div>
+          <div class="certificates-container">
+            <div class="certificates">
+              <a href="https://www.napo.net/" target="_blank">
+                <img
+                  class="cert-logo"
+                  src="assests/images/NAPO-member-02translucentstacked.webp"
+                  alt=""
+                />
+              </a>
+              <a href="https://napooregon.com/" target="_blank">
+                <img
+                  class="cert-logo"
+                  src="assests/images/NAPO-oregon-chapter-02.webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://badging.napo.net/sue-haas/move-management-home-staging-specialist-certificate/7b01c548-22cb-42bd-8089-593ae3d87b1f"
+                target="_blank"
+              >
+                <img
+                  class="cert-logo"
+                  src="assests/images/NAPO-22-Badges-SpecialistCertificate-High-Moving-Staging.webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://badging.napo.net/sue-haas/2023-napo-business-stamp-approval/fea8ef55-34fe-4865-a557-fdc57f5acdd2"
+                target="_blank"
+              >
+                <img
+                  class="cert-logo"
+                  src="assests/images/NAPO-23-Approved-Business-Badge.webp"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.instituteprofessionalorganizers.com/"
+                target="_blank"
+              >
+                <img
+                  class="cert-logo"
+                  src="assests/images/CMPO_tm_FINAL_Logo_Transparent 500x500.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section-schedule">
-        <iframe
-          src="https://app.squarespacescheduling.com/schedule.php?owner=28903289"
-          title="Schedule Appointment"
-          width="100%"
-          height="800"
-          frameborder="0"
-        ></iframe>
+        <div class="wrapper">
+          <iframe
+            src="https://app.squarespacescheduling.com/schedule.php?owner=28903289"
+            title="Schedule Appointment"
+            width="100%"
+            height="800"
+            frameborder="0"
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer class="footer wrapper">

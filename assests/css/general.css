@@ -5,33 +5,50 @@
   font-family: paralucent, sans-serif;
 }
 
+:root {
+  --logo-width: 96px;
+  --wrapper-width: 120rem;
+}
 html {
   overflow-x: hidden;
 }
 
 main {
-  gap: 4rem;
+  /* gap: 4rem; */
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  width: 100%;
   margin-block: 2rem;
 }
 
-/* header */
-.header {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  justify-content: center;
-  align-items: center;
-  height: 6rem;
+.section {
+  gap: 3rem;
+}
+.wrapper {
+  max-width: var(--wrapper-width);
+  margin: 0 10rem;
 }
 
-.header a {
+/* header */
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.header-content a {
   justify-self: start;
 }
 
-.header .main-nav {
-  justify-self: center;
+.header-content .main-nav {
+  margin-left: 10rem;
 }
 
-.header .button-mobile-nav {
+.header-content .button-mobile-nav {
   justify-self: end;
 }
 .main-nav-list {
@@ -39,6 +56,7 @@ main {
   display: flex;
   align-items: center;
   gap: 2rem;
+  transition: all 250ms ease-in;
 }
 
 .main-nav-link {
@@ -69,7 +87,7 @@ main {
   transition: all 200ms ease-in;
 }
 .logo {
-  width: 96px;
+  width: var(--logo-width);
   aspect-ratio: 1/1;
 }
 
@@ -89,7 +107,10 @@ main {
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
-
+.header {
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
 /* sticky nav */
 .sticky .header {
   position: fixed;
@@ -99,17 +120,15 @@ main {
   height: 6rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
   z-index: 999;
 }
 
 .sticky .section-hero {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .section-hero-flex {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .flex-col {
@@ -118,13 +137,6 @@ main {
   align-items: center;
 }
 
-.section {
-  padding: 2rem;
-  gap: 3rem;
-}
-.wrapper {
-  padding: 0 10rem;
-}
 .button {
   background-color: rgba(42, 106, 106, 1);
   padding: 0.8em 1.8em;
@@ -139,6 +151,7 @@ main {
   max-width: 100%;
   word-wrap: break-word;
   text-align: center;
+  display: block;
 }
 
 .button:hover,

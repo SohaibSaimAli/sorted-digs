@@ -1,6 +1,6 @@
 @media (max-width: 75em) {
   .wrapper {
-    padding: 0 5rem;
+    margin: 0 5rem;
   }
 
   .sue-image {
@@ -17,7 +17,7 @@
   }
 
   .wrapper {
-    padding: 0 3rem;
+    margin: 0 3rem;
   }
   .main-nav {
     background-color: rgba(255, 255, 255, 0.97);
@@ -59,12 +59,17 @@
   .section-hero-flex {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .section-hero-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .carousel-container {
+    /* width: 70vw; */
+    flex-basis: auto;
   }
 
   .carousel-service-container {
@@ -92,12 +97,6 @@
     justify-self: center;
   }
 
-  .certificates {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    align-self: center;
-  }
-
   .footer-content {
     gap: 1rem;
   }
@@ -105,7 +104,7 @@
   .section-digital .description {
     max-width: 90%;
   }
-  .section-helping .card-wrapper {
+  .section-helping-grid .card-wrapper {
     grid-template-columns: 1fr;
   }
 
@@ -119,7 +118,7 @@
     padding: 1rem;
   }
   .wrapper {
-    padding: 0 2rem;
+    margin: 0 2rem;
   }
 
   .gtco-testimonials {
@@ -150,13 +149,30 @@
   }
 
   .carousel-container {
-    max-width: 100%;
+    width: 60vw;
+    /* flex-basis: auto; */
   }
+  /* .carousel-service-container {
+    max-width: 65%;
+  } */
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
   }
-  .section-helping {
+  .section-helping-grid {
     grid-template-columns: 1fr;
+  }
+
+  .certificates {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-self: center;
+  }
+
+  .cta-content {
+    padding: 2rem 0;
+  }
+  .text {
+    margin: 0;
   }
 }
 
@@ -165,7 +181,7 @@
     gap: 2rem;
   }
   .wrapper {
-    padding: 0 1rem;
+    margin: 0 1rem;
   }
   .section {
     padding: 0.5rem;

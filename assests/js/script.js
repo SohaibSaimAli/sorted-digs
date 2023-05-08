@@ -8,7 +8,7 @@ btnNavEl.addEventListener("click", function () {
 
 //Sticky navigation
 
-const sectionHeroEl = document.querySelector(".section-hero");
+const mainEl = document.querySelector("main");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -23,8 +23,8 @@ const obs = new IntersectionObserver(
   },
   {
     root: null,
-    threshold: 0,
-    rootMargin: "-80px",
+    threshold: 1.0,
+    // rootMargin: "0px",
   }
 );
-obs.observe(sectionHeroEl);
+obs.observe(mainEl);
