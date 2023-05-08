@@ -26,6 +26,12 @@
   width: auto;
   flex-basis: 80vh;
 }
+
+.hero-button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 /* SECTION ABOUT */
 
 .section-about .flex-col {
