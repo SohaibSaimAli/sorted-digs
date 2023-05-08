@@ -1,13 +1,77 @@
-@media (max-width: 75em) {
-  .wrapper {
-    margin: 0 5rem;
+/* for high screen resolution */
+
+@media (max-width: 2652px) {
+  */ .wrapper {
+    max-width: 1980px;
+    margin-inline: auto;
   }
 
+  .header-content .main-nav {
+    margin-left: 18rem;
+  }
+}
+@media (max-width: 1920px) {
+  .wrapper {
+    max-width: 1440px;
+    /* margin-inline: auto; */
+  }
+  .header-content .main-nav {
+    margin-left: 16rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    max-width: 1080px;
+    /* margin-inline: auto; */
+  }
+}
+@media (max-width: 1366px) {
+  .wrapper {
+    max-width: 1024px;
+    /* margin-inline: auto; */
+  }
+}
+
+@media (max-width: 1140px) {
+  .wrapper {
+    max-width: 855px;
+  }
+}
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 744px;
+    /* margin-inline: auto; */
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 576px;
+    /* margin-inline: auto; */
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 432px;
+    /* margin-inline: auto; */
+  }
+}
+@media (max-width: 470px) {
+  .wrapper {
+    margin-inline: 1rem;
+  }
+}
+
+/* for responsiveness */
+@media (max-width: 75em) {
   .sue-image {
     width: 80%;
   }
   .sue-desc {
     gap: 0;
+  }
+  .header-content .main-nav {
+    margin-left: 8rem;
   }
 }
 @media (max-width: 59em) {
@@ -16,9 +80,6 @@
     z-index: 9999;
   }
 
-  .wrapper {
-    margin: 0 3rem;
-  }
   .main-nav {
     background-color: rgba(255, 255, 255, 0.97);
     position: absolute;
@@ -54,6 +115,11 @@
   .main-nav-list {
     flex-direction: column;
     gap: 2rem;
+    padding-inline: 1rem;
+  }
+
+  .header-content .main-nav {
+    margin-left: 0;
   }
 
   .section-hero-flex {
@@ -117,9 +183,6 @@
   .section {
     padding: 1rem;
   }
-  .wrapper {
-    margin: 0 2rem;
-  }
 
   .gtco-testimonials {
     margin-top: 20px;
@@ -152,9 +215,7 @@
     width: 60vw;
     /* flex-basis: auto; */
   }
-  /* .carousel-service-container {
-    max-width: 65%;
-  } */
+
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
   }
@@ -183,9 +244,7 @@
   main {
     gap: 2rem;
   }
-  .wrapper {
-    margin: 0 1rem;
-  }
+
   .section {
     padding: 0.5rem;
   }
