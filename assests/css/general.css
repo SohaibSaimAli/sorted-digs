@@ -34,18 +34,9 @@ section {
 
 /* header */
 .header-content {
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: baseline;
-}
-
-.header-content a {
-  justify-self: start;
-}
-
-.header-content .main-nav {
-  margin-left: 10rem;
 }
 
 .header-content .button-mobile-nav {
@@ -65,7 +56,7 @@ section {
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
-  color: rgba(42, 106, 106, 1);
+  color: rgb(42, 106, 74, 1);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -78,7 +69,7 @@ section {
   bottom: -10px;
   left: 0;
   right: 0;
-  border: 1px solid rgba(42, 106, 106, 1);
+  border: 1px solid rgb(42, 106, 74, 1);
   transform: scale(0);
 }
 
@@ -124,10 +115,12 @@ section {
 }
 
 .sticky .section-hero {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .section-hero-flex {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -140,7 +133,7 @@ section {
 .button,
 .button:link,
 .button:visited {
-  background-color: rgba(42, 106, 106, 1);
+  background-color: rgb(42, 106, 74);
   padding: 0.8em 1.8em;
   font-size: clamp(0.8rem, 1vw, 1.2rem);
   border-radius: 0.5rem;
@@ -156,59 +149,32 @@ section {
   display: block;
 }
 
-.button-inverted,
-.button-inverted:link,
-.button-visited {
-  background-color: #fff;
-  color: rgba(42, 106, 106, 1);
-  padding: 0.8em 1.8em;
-  font-size: clamp(0.8rem, 1vw, 1.2rem);
-  border-radius: 0.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: border 250ms ease-in;
-  max-width: 100%;
-  word-wrap: break-word;
-  text-align: center;
-  display: block;
-  border: 2px solid transparent;
-}
-
-.button-inverted:hover,
-.button-inverted:active,
-.button-inverted:focus {
-  border: 2px solid rgba(42, 106, 106, 0.4);
-  /* color: #fff; */
-}
-
 .button:hover,
 .button:active {
-  background-color: rgb(42, 136, 136);
+  background-color: rgb(63, 153, 108);
 }
 
 .button-pill {
-  background-color: rgb(6, 154, 142);
+  background-color: rgb(42, 106, 74);
   color: #eee;
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  border: 2px solid #069a8e;
+  border: 2px solid rgb(42, 106, 74);
   font-weight: 500;
   max-width: max-content;
 }
 
 .button-pill:hover,
 .button-pill:active {
-  color: #069a8e;
+  color: rgb(42, 106, 74);
   background-color: #fff;
-  border: 2px solid #069a8e;
+  border: 2px solid rgb(42, 106, 74);
 }
 
 .icon-wrapper {
   display: flex;
-  background-color: rgba(42, 106, 106, 1);
+  background-color: rgb(42, 106, 74);
   border-radius: 12px;
   padding: 0.5rem;
   align-items: center;
@@ -227,7 +193,7 @@ section {
 }
 
 .icon-wrapper:hover .social-icon {
-  fill: rgb(42, 136, 136);
+  fill: rgb(42, 106, 74, 1);
 }
 
 .carousel-control-prev-icon,
@@ -282,7 +248,7 @@ section {
 .copyright {
   padding: 1rem 2rem;
   text-align: center;
-  border: 1px solid rgba(42, 106, 106, 1);
+  border: 1px solid rgb(42, 106, 74);
   max-width: max-content;
   margin-bottom: 2rem;
   border-radius: 5px;
@@ -302,18 +268,18 @@ section {
 
 .contacts p,
 .contacts a {
-  color: rgb(26, 26, 26);
+  color: rgb(49, 49, 49);
   font-weight: 400;
 }
 
 .footer-icon {
-  fill: rgba(42, 106, 106, 1);
-  color: rgba(42, 106, 106, 1);
+  fill: rgb(42, 106, 74);
+  color: rgb(42, 106, 74);
   padding-right: 1rem;
 }
 
 .footer-nav-link {
-  color: rgba(42, 106, 106, 1);
+  color: rgb(42, 106, 74);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 400;
@@ -327,7 +293,7 @@ section {
   bottom: -10px;
   left: 0;
   right: 0;
-  border: 1px solid rgba(42, 106, 106, 1);
+  border: 1px solid rgb(42, 106, 74);
   transform: scale(0);
 }
 

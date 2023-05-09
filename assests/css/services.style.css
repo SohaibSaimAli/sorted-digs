@@ -57,8 +57,9 @@ main {
 }
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
+  margin-right: 1rem;
 }
 
 .card-icon {
@@ -67,12 +68,15 @@ main {
   justify-content: center;
   padding: 1rem;
   border-radius: 50%;
-  max-width: 3.75rem;
   aspect-ratio: 1/1;
   background-color: rgba(42, 106, 106, 0.1);
-  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
 }
 
+.card-icon > svg {
+  width: 20px;
+  height: 20px;
+}
 .card .text {
   /* max-width: 15rem; */
   font-size: 0.8rem;
@@ -80,8 +84,27 @@ main {
 
 .carousel-service-container {
   align-self: end;
+  position: relative;
 }
 
+.service-carousel-caption {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.service-carousel-caption > p {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
 .carousel-item {
   max-height: 80vh;
   border-radius: 10px;
@@ -90,7 +113,8 @@ main {
 /* CTA section */
 .section-cta,
 .section-list {
-  background-color: rgba(42, 106, 106, 0.05);
+  /* background-color: rgba(42, 106, 106, 0.05); */
+  background-color: rgba(42, 106, 74, 0.05);
 }
 .cta-content {
   max-width: 700px;
@@ -134,6 +158,12 @@ main {
   margin-inline: auto;
   padding-block: 1rem;
 } */
+
+.section-digital .card-icon,
+.section-helping .card-icon {
+  margin-bottom: 1.5rem;
+  max-width: 3.75rem;
+}
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

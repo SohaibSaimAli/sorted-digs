@@ -5,18 +5,11 @@
     max-width: 1980px;
     margin-inline: auto;
   }
-
-  .header-content .main-nav {
-    margin-left: 18rem;
-  }
 }
 @media (max-width: 1920px) {
   .wrapper {
     max-width: 1440px;
     /* margin-inline: auto; */
-  }
-  .header-content .main-nav {
-    margin-left: 16rem;
   }
 }
 
@@ -25,17 +18,11 @@
     max-width: 1080px;
     /* margin-inline: auto; */
   }
-  .header-content .main-nav {
-    margin-left: 11rem;
-  }
 }
 @media (max-width: 1366px) {
   .wrapper {
     max-width: 1024px;
     /* margin-inline: auto; */
-  }
-  .header-content .main-nav {
-    margin-left: 10rem;
   }
 }
 
@@ -75,9 +62,6 @@
   }
   .sue-desc {
     gap: 0;
-  }
-  .header-content .main-nav {
-    margin-left: 6rem;
   }
 }
 @media (max-width: 59em) {
@@ -124,12 +108,12 @@
     padding-inline: 1rem;
   }
 
-  .header-content .main-nav {
+  /* .header-content .main-nav {
     margin-left: 0;
-  }
+  } */
 
   .section-hero-flex {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     gap: 1rem;
   }
@@ -139,18 +123,9 @@
     gap: 2rem;
   }
 
-  .carousel-container {
-    /* width: 70vw; */
-    flex-basis: auto;
-  }
-
   .carousel-service-container {
     max-width: 70%;
     justify-self: center;
-  }
-
-  .hero-content {
-    align-items: center;
   }
 
   .hero-header {
@@ -218,8 +193,7 @@
   }
 
   .carousel-container {
-    width: 60vw;
-    /* flex-basis: auto; */
+    width: 80vw;
   }
 
   .card-wrapper {
