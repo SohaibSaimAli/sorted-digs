@@ -4,7 +4,16 @@
   box-sizing: border-box;
   font-family: paralucent, sans-serif;
 }
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: rgb(42, 106, 74, 0.8);
+}
 
+::selection {
+  color: #fff;
+  background: rgb(42, 106, 74, 0.8);
+}
 :root {
   --logo-width: 96px;
   --wrapper-width: 120rem;
